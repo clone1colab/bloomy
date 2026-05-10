@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Libre+Baskerville", serif;
+  
+  --color-bakery-bg: #F9E6E8;
+  --color-bakery-text: #8B5A2B;
+  --color-bakery-text-soft: #A67C52;
+  --color-bakery-pink: #F4ACB7;
+  --color-bakery-pink-dark: #E8A2B0;
+  --color-bakery-border: #FADADD;
+}
+
+@layer base {
+  body {
+    @apply bg-bakery-bg text-bakery-text font-serif selection:bg-bakery-pink selection:text-white;
+  }
+}
+
